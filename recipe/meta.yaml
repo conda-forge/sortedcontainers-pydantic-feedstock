@@ -1,5 +1,5 @@
 {% set name = "sortedcontainers-pydantic" %}
-{% set version = "1.0.0" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sortedcontainers_pydantic-{{ version }}.tar.gz
-  sha256: eb0e4aeb5197d690165f0a7b1a55c490eabe4b21375c3a91726373b2551e25ee
+  sha256: 0cb3abfbda64dc1fa2365b578ddc3a259c7d75daeae76d2f9087f5ebc1f8f1fe
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
